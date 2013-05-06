@@ -1,0 +1,6 @@
+- unless target.errors.empty?
+  %h3 There were problems:
+  %ul
+    - target.errors.full_messages.each do |error_message|
+      %li
+        = error_message

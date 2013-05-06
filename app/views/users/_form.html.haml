@@ -1,0 +1,11 @@
+= render 'shared/error_messages', :target => @user
+
+= form.label :email
+= form.text_field :email
+%br
+= form.label :password, form.object.new_record? ? nil : "New Password"
+= form.password_field :password
+%br
+= form.label :password_confirmation, "Password Confirmation"
+= form.password_field :password_confirmation
+%br
